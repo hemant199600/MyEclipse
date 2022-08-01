@@ -59,17 +59,13 @@ class MostRepeated
 		}
 		int max=0,index=0;
 		for (i = 0; i < b.length; i++) {
-//			for (j = i + 1; j < b.length; j++) {
-//				if (b[i] > b[j]) {
-//					k = b[j];
-//					b[j] = b[i];
-//					b[i] = k;
+
 				if(b[i]>max)
 				{
 					max=b[i];
 					index=i;
 				}
-//				}
+
 			
 			}
 		

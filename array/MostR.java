@@ -51,12 +51,7 @@ public class MostR {
 			System.out.print(count[i]+" ");
 		
 		int index=count[0];
-		if(count[0]==a[count[0]-1])
-		{
-			System.out.println("\nMost repeated element is :"+a[count[0]-1]);
-		}
-		else
-		 System.out.println("\nMost repeated element is :"+a[count[0]]);
+		for(int i)
 		
 	}
 
