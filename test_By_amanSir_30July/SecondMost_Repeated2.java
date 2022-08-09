@@ -9,6 +9,7 @@ class repeat
 	int b[]=new int[10];
 	int d[]=new int[10];
 	int lock=-1, c=1;
+	int count=0;
 	public void input()
 	{
 		Scanner sc=new Scanner(System.in);
@@ -80,19 +81,53 @@ class repeat
 	public void find_Second_Most_Repeated(int k)
 	{
 		System.out.println("Second most Repeated Element :");
-		for(int i=0;i<b.length;i++)
+		if(this.secondMaxFreq(k)!=true)
 		{
-			if(d[i]==k)
+			for(int i=0;i<b.length;i++)
 			{
-				System.out.print(a[i]);
-				break;
+				if(d[i]==k)
+				{
+					System.out.print(a[i]);
+					break;
+				}
+			}
+			System.out.println();
+		}
+		else
+		{
+			k=b[count];
+			for(int i=0;i<b.length;i++)
+			{
+				if(d[i]==k)
+				{
+					System.out.print(a[i]);
+					break;
+				}
+			}
+			System.out.println();
+		}
+				
+	}
+	public boolean secondMaxFreq(int k)
+	{
+		for(int i=0;i<d.length;i++)
+		{
+			if(b[i]==k)
+			{
+				count++;
 			}
 		}
-		System.out.println();
+		if(count>0)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 	
 }
-
 public class SecondMost_Repeated2 
 {
 
