@@ -105,7 +105,7 @@ public class Imp_String1 {
 		char[]ch=temp.toCharArray();
 		for(int i=0;i<sh.length;i++)
 		{
-			if(Character.isLowerCase(ch[i]))  //if(ch[i]>='a'&&ch[i]<='z')
+			if(_Character.isLowerCase(ch[i]))  //if(ch[i]>='a'&&ch[i]<='z')
 			{
 				sh[i]=sh[i].toUpperCase();
 			}

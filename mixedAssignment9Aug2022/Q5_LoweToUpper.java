@@ -1,3 +1,5 @@
+/*Q5.Wap enter a string in lowercase now you have to convert every first character of the word in upper case. */
+
 package mixedAssignment9Aug2022;
 
 import java.util.Scanner;

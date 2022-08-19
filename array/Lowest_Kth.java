@@ -52,11 +52,11 @@ public class Lowest_Kth {
 		Lowest_Kth obj=new Lowest_Kth();
 		System.out.println("Enter kth element: ");
 		int k=obj.sc.nextInt();
-		int a[]= {1,2,4,5,6,7};
+		int a[]= {8,2,4,5,6,7};
 		System.out.println("Array elements: ");
 		for(int i=0;i<a.length;i++)
 		{
-			System.out.print(a[i]);
+			System.out.print(a[i]+" ");
 		}
 		System.out.println();
 		obj.lowest(a, k);

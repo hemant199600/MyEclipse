@@ -1,7 +1,7 @@
 package test_By_amanSir_30July;
 
 import java.util.Scanner;
-
+/*
 class repeat
 {
 	int i,j,k;
@@ -143,3 +143,79 @@ public class SecondMost_Repeated2
 	}
 
 }
+*/
+
+public class SecondMost_Repeated2 
+{
+
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		 int []a=new int [15];
+		 int []b=new int [a.length];
+				int i,j,c=1,lock=-1;
+				
+				System.out.println("Enter elements in array=");
+				   for(i=0;i<a.length;i++)
+				   {
+					    a[i]=sc.nextInt();
+				   }
+				   
+				   
+				   for(i=0;i<a.length;i++)
+				   {
+					   c=1;
+					   for(j=i+1;j<a.length;j++)
+					   {
+						   if(a[i]==a[j])
+						   {
+							   c++;
+							   b[j]=lock;
+						   }
+					   }
+					   
+					 if(b[i]!=lock)  
+						 b[i]=c;  
+				   }
+				   
+				   
+				   System.out.println("Elements\tFrequency ");
+				   for(i=0;i<a.length;i++)
+				   {	
+					 if(b[i]!=lock)
+					 {
+					    System.out.println(a[i]+"\t\t"+b[i]); 
+					   
+					 }
+				   }
+				   int temp1=0, temp2;
+				   for(i=0;i<a.length;i++)
+				   {
+					   for( j=i+1; j<8; j++)
+					    { 	
+					      if(b[i]<b[j])
+						{
+						temp1=b[j];
+						b[j]=b[i];
+						b[i]=temp1;
+						 
+						temp2=a[j];
+						a[j]=a[i];
+						a[i]=temp2;
+						}
+					    }
+					}
+					
+					
+					
+					
+					
+					System.out.println("2nd Most repetitive element is "+a[1]);
+					
+				   
+				   
+				
+	}
+
+	}
